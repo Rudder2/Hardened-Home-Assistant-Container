@@ -5,7 +5,8 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/hardened-home-assistant-container
+  IMAGE_NAME: ${{ github.repository_owner }}/Hardened-Home-Assistant-Container
+
 
 jobs:
   build-and-push:
@@ -34,6 +35,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:trial
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
