@@ -8,5 +8,6 @@ RUN mkdir -p /config/.clouddeps /run /var/run && \
                     /var/log
 
 ENV HOME=/tmp
+ENV PIP_BIN_DIR=/tmp/bin
 ENV PIP_USER=true
 ENV PYTHONPATH=/config/.clouddeps/lib/python3.14/site-packages
