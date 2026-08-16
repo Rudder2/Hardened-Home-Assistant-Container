@@ -5,8 +5,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/Hardened-Home-Assistant-Container
-
+  IMAGE_NAME: rudder2/hardened-home-assistant-container
 
 jobs:
   build-and-push:
