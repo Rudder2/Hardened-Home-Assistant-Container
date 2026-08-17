@@ -7,7 +7,8 @@ RUN mkdir -p /config/.clouddeps /run /var/run && \
                     /var/run \
                     /var/log
 
-ENV HOME=/tmp
-ENV PIP_BIN_DIR=/tmp/bin
+ENV HOME="/dev/shm"
+ENV PIP_BIN_DIR="/dev/shm/bin"
+ENV PATH="/dev/shm/bin:${PATH}"
+ENV PYTHONPATH="/dev/shm/lib/python3.14/site-packages"
 ENV PIP_USER=true
-ENV PYTHONPATH=/config/.clouddeps/lib/python3.14/site-packages
